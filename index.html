@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taller 3-1 · Cohen-Sutherland</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Cohen-Sutherland · Recorte de Líneas</h1>
+
+  <div class="workspace">
+
+    <div class="canvas-wrap">
+      <canvas id="cv" width="560" height="480"></canvas>
+      <span class="canvas-label">(0,0)</span>
+    </div>
+
+    <div class="panel">
+
+      <div class="card" id="cardWindow">
+        <h2>Ventana de recorte</h2>
+        <div class="grid2">
+          <label>x₁ <input type="number" id="wx1" value="80"></label>
+          <label>y₁ <input type="number" id="wy1" value="60"></label>
+          <label>x₂ <input type="number" id="wx2" value="320"></label>
+          <label>y₂ <input type="number" id="wy2" value="300"></label>
+        </div>
+        <button id="btnUpdate">Actualizar</button>
+      </div>
+
+      <div class="card">
+        <h2>Línea actual</h2>
+        <div class="info-row" id="infoPanel">—</div>
+      </div>
+
+      <div class="card">
+        <h2>Escenas</h2>
+        <div class="scene-counter" id="sceneCounter">Escena 1 / 5</div>
+        <div class="nav-row">
+          <button id="btnFirst">|&lt;</button>
+          <button id="btnPrev">&lt;</button>
+          <button id="btnNext">&gt;</button>
+          <button id="btnLast">&gt;|</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
